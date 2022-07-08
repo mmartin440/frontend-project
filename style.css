@@ -1,39 +1,100 @@
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0; 
-} */
-
-.search-bar {
+body {
+    background-image: url("https://source.unsplash.com/featured/1700x900?clouds,landscape");
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .navbar-nav .nav-link.active,
+  .navbar-nav .show > .nav-link {
+    color: white;
+  }
+  .navbar-brand {
+    color: white;
+  }
+  header {
+    background: #336e9e;
+  }
+  header .nav-item {
+    padding: 1em;
+  }
+  header .navbar-brand {
+    padding-left: 5rem;
+  }
+  header .nav-link.active:hover {
+    color: black;
+  }
+  
+  /* logo here  */
+  .bi-umbrella-fill {
+    padding: 0.5em;
+  }
+  
+  /* search bar and button search */
+  .search-bar {
     outline: none;
-    border: none;
+    /* border: none; */
     padding: 0.5em;
     border-radius: 10px;
     background: #7c7c7c2b;
     color: black;
-}
-
-#submit {
+  }
+  #submit {
     margin: 0.5em;
-    border-radius: 10%;
+    border-radius: 50%;
     border: none;
-}
-
-#container {
-    background: #eaeaea;
+    height: 2.5em;
+    width: 2.5em;
+  }
+  
+  /* where I alight the search and display info */
+  #weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  #container {
+    background: rgb(255 255 255 / 80%);
     padding: 2em;
     border-radius: 30px;
     width: 100%;
     max-width: 420px;
     margin: 1em;
-}
-
-.refresh-btn {
-    margin: 10px;
-    left: 250px;
+  }
+  .top {
+    padding-bottom: 10px;
+  }
+  .bottom {
+    line-height: 0.5;
+  }
+  .location {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .description {
+    padding: 5px;
+  }
+  .humudity {
+    padding-right: 20px;
+  }
+  .icon-img {
+    border-radius: 50%;
+    width: 90px;
+    background: lightgray;
+    height: 90px;
+  }
+  img {
     position: relative;
-    bottom: 36px;
-    border: none;
-}
+    right: 5px;
+    bottom: 5px;
+  }
+  .day-night {
+    background: rgb(255 255 255 / 90%);
+    position: relative;
+    right: 346px;
+    top: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
