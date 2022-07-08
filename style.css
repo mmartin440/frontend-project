@@ -88,7 +88,8 @@ body {
     right: 5px;
     bottom: 5px;
   }
-  .day-night {
+  .day-night.reveal {
+    display: inline;
     background: rgb(255 255 255 / 90%);
     position: relative;
     right: 346px;
@@ -96,5 +97,8 @@ body {
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
+  }
+  .day-night{
+    display: none;
   }
   

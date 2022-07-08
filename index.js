@@ -33,7 +33,6 @@ $userForm.submit((event) => {
     let temp = data["main"]["temp"]
     // let fahren = Math.floor(((1.8 * (temp - 273)) + 32));
     $temparture.text(`${temp} °F`)
-
     $(".temp").append($temparture)
     // console.log(temp);
 
@@ -93,3 +92,12 @@ $(".about").on("click", () => {
   )
 })
 
+function revealContent() {
+  if($('.day-night').hasClass('reveal')) {
+    $('.day-night').removeClass('reveal')
+  } else {
+    $('.day-night').addClass('reveal')
+  }
+}
+
+$('.location').on('click', revealContent); 
